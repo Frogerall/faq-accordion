@@ -83,13 +83,22 @@ body {
  background-color: hsl(273, 75%, 66%);
  font-size: 12px;
  font-family: "Kumbh Sans", sans-serif;
+ overflow: hidden;
 }
 .container {
  width: 17.5rem;
+ height: auto;
  margin: 7rem auto 1rem auto;
  background-color: white;
  position: relative;
  border-radius: 1rem;
+ @media (min-width: 600px) {
+  width: 50rem;
+  height: 30rem;
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
+ }
 }
 .main-image,
 .background-image {
@@ -97,6 +106,9 @@ body {
  left: 50%;
  transform: translateX(-50%);
  width: 70%;
+ @media (min-width: 600px) {
+  display: none;
+ }
 }
 .main-image {
  top: -5.5rem;
@@ -104,12 +116,51 @@ body {
 .background-image {
  top: 0;
 }
+.desktop-image {
+ display: none;
+ @media (min-width: 600px) {
+  position: absolute;
+  display: inline-block;
+  width: 27rem;
+  left: 0;
+  transform: translate(-17%, 25%);
+ }
+}
+.desktop-background {
+ display: none;
+ @media (min-width: 600px) {
+  position: fixed;
+  display: inline-block;
+  width: 10rem;
+  left: 0;
+  transform: translate(99%, 140%);
+ }
+}
+.desktop-pattern {
+ display: none;
+ @media (min-width: 600px) {
+  position: absolute;
+  display: inline-block;
+  width: 45rem;
+  left: -45%;
+  bottom: -18%;
+ }
+}
 .content {
  padding: 5.5rem 0 1rem 0;
  margin: 1rem;
+ @media (min-width: 600px) {
+  flex: 0 1 40%;
+  margin-right: 4rem;
+  padding-top: 1rem;
+ }
 }
 h1 {
  text-align: center;
+ @media (min-width: 600px) {
+  text-align: left;
+  margin-bottom: 2rem;
+ }
 }
 .accordion {
  border-bottom: 1px solid rgba(0, 0, 0, 0.178);
@@ -119,6 +170,7 @@ h4 {
  justify-content: space-between;
  align-items: center;
  padding-bottom: 0.3rem;
+ font-weight: 300;
 }
 p {
  margin-top: 0.3rem;
@@ -130,4 +182,7 @@ p {
 }
 .rotate {
  transform: rotate(180deg);
+}
+.fontbold {
+ font-weight: bold;
 }
