@@ -81,9 +81,9 @@ If you want more help with writing markdown, we'd recommend checking out [The Ma
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Adrian Salitico](http://salproj.tech)
+- Frontend Mentor - [@frogerall](https://www.frontendmentor.io/profile/frogerall)
+- Twitter - [@saliticoadrian](https://www.twitter.com/saliticoadrian)
 
 ## Acknowledgments
 
